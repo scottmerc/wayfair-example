@@ -17,7 +17,7 @@ class AndroidMainPage(BasePage):
     LIVING_ROOM = (MobileBy.XPATH, '"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.RelativeLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout/android.widget.GridLayout[2]/android.widget.LinearLayout[1]/android.widget.FrameLayout/android.widget.ImageView"')
     PRODUCT = (MobileBy.XPATH, "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout/android.widget.RelativeLayout/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[1]/android.widget.FrameLayout/android.widget.LinearLayout")
     #TouchAction(driver)   .press(x=562, y=1424)   .move_to(x=562, y=857)   .release()   .perform()
-
+    LOGO = (MobileBy.ID, 'com.wayfair.wayfair:id/logo_image')
 
     def __init__(self, driver):
         super(AndroidMainPage, self).__init__(driver)
@@ -36,6 +36,7 @@ class AndroidMainPage(BasePage):
         self.wait(self.OPTION).click()
         time.sleep(7)
         #self.swipe(562, 1424, 562, 857)
+        self.wait(self.LOGO)
         self.swipe(361, 1097, 346, 170)
         self.wait(self.LIVING_ROOM).click()
         # self.wait(self.PRODUCT).click()
