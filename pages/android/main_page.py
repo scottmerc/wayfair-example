@@ -38,7 +38,7 @@ class AndroidMainPage(BasePage):
         #self.swipe(562, 1424, 562, 857)
         self.wait(self.LOGO)
         self.swipe(361, 1097, 346, 170)
-        self.swipe(361, 1097, 346, 500)
+        self.swipe(361, 1097, 346, 170)
         self.wait(self.LIVING_ROOM).click()
         # self.wait(self.PRODUCT).click()
         time.sleep(2)
