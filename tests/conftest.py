@@ -51,8 +51,8 @@ def ios_caps():
 @pytest.fixture()
 def android_caps():
     return {
-    "deviceName": "SM-G960U",
-    "udid": "4f464a4b4c5a3398",
+    "deviceName": "SM-J510FN",
+    "udid": "71fef222",
     "autoAcceptAlerts": "true",
     "appPackage": "com.wayfair.wayfair",
     "automationName": "UiAutomator2",
