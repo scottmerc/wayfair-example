@@ -6,7 +6,6 @@ from selenium.webdriver.common.actions.action_builder import ActionBuilder
 from selenium.webdriver.common.actions.pointer_actions import PointerActions
 from appium.webdriver.common.touch_action import TouchAction
 from appium import webdriver
-from typing import Tuple
 import time
 
 class BasePage(object):
